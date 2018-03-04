@@ -1,0 +1,115 @@
+.register {
+	background: url('../img/register_bg.jpg');
+	background-size: cover;
+	padding-top: 80px;
+	padding-bottom: 87px;
+
+	&__wrapper {
+		width: 300px;
+		background: #ffffff;
+		color: @text-gray-register;
+		margin: 0 auto;
+		padding: 0 80px;
+		padding-bottom: 32px;
+	}
+
+	&__wrapper input {
+		width: 300px;
+		font-size: 20px;
+		font-weight: 300;
+		padding: 12px 20px;
+		border: 1px solid #f5f5f5;
+    border-top: 1px solid #c4c4c4;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    margin-bottom: 10px;
+	}
+	
+	&__wrapper input:focus {
+		border-color: #239e57;
+    outline: none;
+	}
+	
+
+	&__title {
+		font-size: 35px;
+		font-weight: 100;
+		text-align: center;
+		padding-top: 28px;
+		margin-bottom: 28px;
+	}
+
+	& select {
+		width: 300px;
+		font-size: 20px;
+		font-weight: 300;
+		color: @text-gray-register;
+		padding: 12px 20px;
+		border: 2px solid #f9f9f9;
+    border-top: 2px solid #c4c4c4;
+    box-sizing: border-box;
+    background: #f5f5f5;
+	}
+
+	& select:focus {
+		border-color: #239e57;
+		outline: none;
+	}
+
+	& option {
+		width: 300px;
+		font-size: 20px;
+		font-weight: 300;
+		color: @text-gray-register;
+		padding: 12px 20px;
+		border: 2px solid #f9f9f9;
+    border-top: 2px solid #c4c4c4;
+    box-sizing: border-box;
+    background: #f5f5f5;
+	}
+
+
+	&__enter {
+		display: block;
+		margin: 0 auto;
+		margin-top: 20px;
+		padding: 14px 30px;
+		border-radius: 4px;
+		font-weight: 400;
+		font-size: 20px;
+		color: @text-white;
+		background: @bg-btn;
+		text-align: center;
+		text-transform: uppercase;
+		border: none;
+		cursor: pointer;
+	}
+
+	&__enter:hover {
+		background: @bg-btn-hover;
+	} 
+}
+
+@media @mobile-widths  {
+	.register {
+		&__wrapper {
+			width: 260px;
+			padding: 0 20px;
+			padding-bottom: 32px;
+			
+		}
+
+		&__wrapper input {
+			width: 260px;
+		}
+
+		& select {
+			width: 260px;
+		}
+
+		& option {
+			width: 260px;
+		}
+
+	}
+}

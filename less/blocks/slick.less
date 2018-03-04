@@ -1,0 +1,81 @@
+.slick-next {
+     right: 15%; 
+     top: 223px;
+     background: transparent; 
+     width: 34px;
+     height: 34px;
+     z-index: 1100;
+     opacity: 1;
+}
+
+.slick-prev  {
+    left: 15%; 
+     top: 201px;
+     background: transparent; 
+     width: 34px;
+     height: 34px;
+     z-index: 1100;
+     transform: rotate(180deg);
+     opacity: 1;
+}
+
+.slick-next:before, .slick-prev:before{
+    position: absolute;
+    content: "";
+    background: url('../img/arrow.png');
+    width: 16px;
+    height: 30px;
+    top: 0px;
+    left: 0px; 
+}
+
+.slick-next:hover::before, .slick-prev:hover::before {
+    transform: scale(1.2);
+
+}
+
+.slick-dots{
+    bottom: auto;
+    display: block;
+    width: 98.5%;
+    bottom: 20px;
+}
+
+
+.slick-dots li{
+    margin: 0;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background: #2c3e50;
+}
+.slick-dots li button:before {
+    font-size: 0px;
+    opacity: 1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #2c3e50;
+    background: rgba(44, 62, 80, 0.5);
+    top: 5px;
+}
+.slick-dots li:hover button:before {
+    background: rgba(44, 62, 80, 0.9);
+   
+}
+.slick-dots li.slick-active:hover button:before {
+    background: rgba(44, 62, 80, 1);
+   
+}
+
+@media @tablet-widths{ 
+    .slick-next {
+     right: 1%; 
+    }
+
+    .slick-prev  {
+     left: 1%; 
+}
+}
+
